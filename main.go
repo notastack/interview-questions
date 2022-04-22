@@ -11,7 +11,7 @@ func main() {
 	cbuzz := 5
 	for i := 1; i < 101; i++ {
 		switch {
-		case i%(cfizz * i%cbuzz) == 0:
+		case i%(cfizz * cbuzz) == 0:
 			fmt.Println("fizzbuzz")
 		case i%cfizz == 0:
 			fmt.Println("fizz")
