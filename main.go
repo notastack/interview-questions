@@ -16,13 +16,13 @@ func main() {
 	fmt.Println("Where should the counting stop?")
 	fmt.Scanln(&higher)
 	fibu(cfizz, cbuzz, lower, higher)
-	
+
 }
 
-func fibu (cfizz, cbuzz, lower, higher int) {
-	for i := lower; i < higher; i++ {
+func fibu(cfizz, cbuzz, lower, higher int) {
+	for i := lower; i < higher+1; i++ {
 		switch {
-		case i%(cfizz * cbuzz) == 0:
+		case i%(cfizz*cbuzz) == 0:
 			fmt.Println("fizzbuzz")
 		case i%cfizz == 0:
 			fmt.Println("fizz")
