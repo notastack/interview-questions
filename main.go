@@ -6,10 +6,21 @@ import (
 )
 
 func main() {
+	var cfizz, cbuzz, lower, higher int
+	fmt.Println("What should the value of fizz be?")
+	fmt.Scanln(&cfizz)
+	fmt.Println("What should the value of buzz be?")
+	fmt.Scanln(&cbuzz)
+	fmt.Println("Where should the counting start?")
+	fmt.Scanln(&lower)
+	fmt.Println("Where should the counting stop?")
+	fmt.Scanln(&higher)
+	fibu(cfizz, cbuzz, lower, higher)
+	
+}
 
-	cfizz := 3
-	cbuzz := 5
-	for i := 1; i < 101; i++ {
+func fibu (cfizz, cbuzz, lower, higher int) {
+	for i := lower; i < higher; i++ {
 		switch {
 		case i%(cfizz * cbuzz) == 0:
 			fmt.Println("fizzbuzz")
