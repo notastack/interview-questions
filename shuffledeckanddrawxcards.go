@@ -52,10 +52,11 @@ func draw(x []int) {
 	}
 }
 
-func suffle(x []int) {
+func suffle(x []int) []int{
 	for i := range x {
 		j := rand.Intn(i + 1)
 		x[i], x[j] = x[j], x[i]
 	}
+	return x
 
 }
