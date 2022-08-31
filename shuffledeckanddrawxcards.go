@@ -47,6 +47,7 @@ func draw(x []int) {
 	if areyouhere(drawn, place) {
 		draw(x)
 	} else {
+		drawn = append(drawn, place)
 		fmt.Println(place)
 	}
 }
