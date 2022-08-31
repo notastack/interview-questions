@@ -1,7 +1,5 @@
-# golangfizzbuzz
-
-Just a literal fizzbuzz made in golang.
-With other common programming questions.
+# interview questions
+Answers to common programming questions.
 
 /*
 
