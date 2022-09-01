@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"math/rand"
+	"time"
 )
 
 func main() {
@@ -12,6 +13,7 @@ func main() {
 	A := make([]int, n, 100)
 	fmt.Println("what should the max number be?")
 	fmt.Scan(&max)
+	rand.Seed(time.Now().UnixNano())
 	for i := 0; i < n; i++ {
 		A[i] = rand.Intn(max + 1)
 	}
