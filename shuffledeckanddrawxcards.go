@@ -10,7 +10,7 @@ var drawn []int
 
 func main() {
 	var cfizz, z int
-
+	rand.Seed(time.Now().UnixNano())
 	fmt.Println("size of the deck?")
 	fmt.Scanln(&cfizz)
 	fmt.Println("how many cards to draw out?")
