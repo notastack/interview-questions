@@ -30,13 +30,17 @@ func fibu(names []string, values []int, lower int, higher int) {
 
 func findinarray(arrow int, target []int, name []string) {
 	var y int
+	//the sentence array contains either the number or the fizz, buzz or other
 	var sentence []interface{}
 	y = len(name)
+	//looks through the value array to see if any number in it is divisible by i
 	for i := 0; i < y; i++ {
 		if arrow%target[i] == 0 {
+			//sends the equivalent word to the sentence array
 			sentence = append(sentence, name[i])
 		}
 	}
+	//if sentence array is empty, prints the number instead
 	if len(sentence) == 0 {
 		sentence = append(sentence, arrow)
 	}
@@ -50,6 +54,7 @@ func getnames() []string {
 	i = 1
 	var namewritten string
 	fmt.Println("writre [stop] when you entered all the names.")
+	//sets up the names of the variables (fizz, buzz, mazz, ...)
 	for true {
 		fmt.Println("what should be the name of value number ", i, "?")
 		fmt.Scanln(&namewritten)
@@ -68,6 +73,7 @@ func getvalues(x []string) []int {
 	var y []int
 	var valuegot int
 	i = 0
+	//fizz = 3, buzz = 5, mazz = 4, ...
 	for i < len(x) {
 		fmt.Println("what should be the value of ", x[i], " to be?")
 		fmt.Scanln(&valuegot)
