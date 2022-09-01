@@ -6,6 +6,7 @@ import (
 
 func main() {
 	var cfizz, cbuzz, lower int
+	//user sets up variables
 	fmt.Println("Where should we start?")
 	fmt.Scanln(&cfizz)
 	fmt.Println("Where should we end?")
@@ -19,6 +20,7 @@ func main() {
 
 func fibu(x, y, z int) {
 	for i := x; i < y+1; i++ {
+		//check if i is divisible by z
 		if i%z == 0 { 
 			fmt.Println(i)
 		}
