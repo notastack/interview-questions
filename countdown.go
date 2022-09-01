@@ -6,6 +6,7 @@ import (
 
 func main() {
 	var cfizz, cbuzz, lower int
+	//user sets variables
 	fmt.Println("What number should we count down from?")
 	fmt.Scanln(&cfizz)
 	fmt.Println("Untill we reach what number?")
@@ -20,6 +21,7 @@ func main() {
 func fibu(x, y, z int) {
 	var i int
 	i = x
+	//count in z decrements down untill the number is under the limit
 	for i > y {
 		fmt.Println(i)
 		i = i - z
