@@ -81,14 +81,6 @@ func main() {
 		fmt.Println("You choose")
 		choice(usrplay)
 		fmt.Println("The computer choose")
-		//builds up the hype
-		time.Sleep(1 * time.Second)
-		fmt.Println("3...")
-		time.Sleep(1 * time.Second)
-		fmt.Println("2...")
-		time.Sleep(1 * time.Second)
-		fmt.Println("1...")
-		time.Sleep(1 * time.Second)
 		var cpuplay int
 		//generate a random choice for the cpu
 		rand.Seed(time.Now().UnixNano())
