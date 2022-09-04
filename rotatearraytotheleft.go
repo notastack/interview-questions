@@ -19,7 +19,7 @@ func main() {
 	for i := 0; i < n; i++ {
 		A[i] = rand.Intn(max + 1)
 	}
-	//prints out the original so you can check it was actually scrambled before
+	//prints out the original
 	fmt.Println("Original array:")
 	fmt.Println(A, n)
 	var l int
