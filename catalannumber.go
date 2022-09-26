@@ -17,5 +17,5 @@ func main() {
 func catalan(n int) {
 	var b, c big.Int
 	v := int64(n)
-	fmt.Println("the catalan number for ", n, " is ", (c.Div(b.Binomial(v*2, v), c.SetInt64(v+1))))
+	fmt.Println("the catalan number for ", n, " is ", (c.Div(b.Binomial(v*2, v), c.SetInt64(v+1))), " .")
 }
